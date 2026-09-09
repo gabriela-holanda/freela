@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Freela — transforme suas habilidades em serviços e encontre clientes.">
+  <title>Freela — Sua habilidade tem valor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="#inicio">freela<span>.</span></a>
+    <nav>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre</a>
+    </nav>
+    <button class="btn btn-dark" data-open-modal="offer">Oferecer serviço</button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <span class="eyebrow">A plataforma para quem sabe fazer</span>
+        <h1>Você sabe fazer.<br><em>Alguém precisa.</em></h1>
+        <p>Transforme o que você sabe fazer em oportunidades. Encontre serviços, mostre seu talento e conecte-se com quem precisa de você.</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" data-open-modal="offer">Quero oferecer meu serviço <span>→</span></button>
+          <button class="text-btn" data-scroll="#servicos">Encontrar um serviço <span>↓</span></button>
+        </div>
+        <div class="trust">
+          <div class="avatars"><span>J</span><span>M</span><span>A</span><span>+</span></div>
+          <p><strong>+2.000 pessoas</strong><br>já encontraram oportunidades</p>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="floating-card card-top">
+          <span class="mini-icon">✦</span>
+          <div><strong>Nova oportunidade</strong><small>Alguém encontrou seu serviço!</small></div>
+        </div>
+        <div class="profile-card">
+          <div class="profile-head">
+            <div class="profile-avatar">AM</div>
+            <div><strong>Ana Martins</strong><small>Designer & Criadora</small></div>
+            <span class="verified">✓</span>
+          </div>
+          <div class="service-photo"><span>DESIGN</span></div>
+          <h3>Identidade visual para pequenos negócios</h3>
+          <div class="service-meta"><span>★ 4,9 (32)</span><span>Entrega em 3 dias</span></div>
+          <div class="price-row"><strong>R$ 120</strong><button class="round-btn">→</button></div>
+        </div>
+        <div class="floating-card card-bottom">
+          <span class="check">✓</span>
+          <div><strong>Serviço contratado</strong><small>Pagamento protegido</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="numbers">
+      <div><strong>2.000+</strong><span>talentos cadastrados</span></div>
+      <div><strong>850+</strong><span>serviços disponíveis</span></div>
+      <div><strong>4,8/5</strong><span>avaliação média</span></div>
+      <div><strong>100%</strong><span>feito para começar</span></div>
+    </section>
+
+    <section class="section" id="como-funciona">
+      <div class="section-heading">
+        <span class="eyebrow">Simples assim</span>
+        <h2>Do que você sabe fazer<br>para o seu próximo cliente.</h2>
+      </div>
+      <div class="steps">
+        <article><span>01</span><h3>Crie seu serviço</h3><p>Conte o que você faz, defina seu preço e mostre seu trabalho.</p></article>
+        <article><span>02</span><h3>Seja encontrado</h3><p>Clientes procuram por habilidades e encontram serviços como o seu.</p></article>
+        <article><span>03</span><h3>Conecte-se</h3><p>Combine os detalhes, entregue seu trabalho e construa sua reputação.</p></article>
+      </div>
+    </section>
+
+    <section class="marketplace" id="servicos">
+      <div class="market-head">
+        <div>
+          <span class="eyebrow">Marketplace</span>
+          <h2>O que você está procurando?</h2>
+        </div>
+        <div class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Buscar serviço..."></div>
+      </div>
+
+      <div class="categories" id="categories">
+        <button class="category active" data-category="Todos">Todos</button>
+        <button class="category" data-category="Design">🎨 Design</button>
+        <button class="category" data-category="Tecnologia">💻 Tecnologia</button>
+        <button class="category" data-category="Vídeo">🎬 Vídeo</button>
+        <button class="category" data-category="Estudos">📚 Estudos</button>
+        <button class="category" data-category="Outros">✦ Outros</button>
+      </div>
+
+      <div class="service-grid" id="serviceGrid"></div>
+      <p class="empty-state" id="emptyState">Nenhum serviço encontrado. Tente outra busca.</p>
+      <button class="btn btn-outline center-btn" id="loadMore">Ver mais serviços</button>
+    </section>
+
+    <section class="cta" id="sobre">
+      <div>
+        <span class="eyebrow">Sua próxima oportunidade pode estar aqui</span>
+        <h2>Não deixe sua habilidade parada.</h2>
+        <p>Crie seu primeiro serviço gratuitamente e descubra quem está procurando exatamente o que você sabe fazer.</p>
+      </div>
+      <button class="btn btn-light" data-open-modal="offer">Começar agora →</button>
+    </section>
+  </main>
+
+  <footer>
+    <a class="logo" href="#inicio">freela<span>.</span></a>
+    <p>Conectando habilidades a oportunidades.</p>
+    <span>© 2026 Freela</span>
+  </footer>
+
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <button class="close-modal" id="closeModal">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
